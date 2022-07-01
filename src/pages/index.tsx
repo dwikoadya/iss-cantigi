@@ -9,6 +9,7 @@ import VisiMisi from "components/VisiMisi";
 import Motto from "components/Motto";
 import ApbDesa from "components/ApbDesa";
 import Umkm from "components/Umkm";
+import GaleriDesa from "components/GaleriDesa";
 
 const Home: NextPage = () => (
   <div className="w-full">
@@ -24,6 +25,7 @@ const Home: NextPage = () => (
     <Motto />
     <ApbDesa />
     <Umkm />
+    <GaleriDesa />
   </div>
 );
 
