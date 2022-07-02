@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function StrukturOrganisasi() {
   return (
-    <div className="flex flex-col h-[917px] justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <div className="text-center ">
-        <h3 className="font-bold text-4xl m-9 tracking-wider">Struktur Organisasi</h3>
+        <h3 className="font-bold lg:text-4xl text-xl my-9 tracking-wider">Struktur Organisasi</h3>
         <Image
           alt="struktur"
           className="object-cover"

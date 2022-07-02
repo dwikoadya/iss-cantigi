@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import clsx from "clsx";
 
 export default function Kuwu() {
   return (
-    // 641
-    <div className="h-[720px] flex">
-      <div className="w-1/2 text-lg">
+    <div className="flex flex-col lg:flex-row">
+      <div className="lg:w-1/2 w-full text-lg">
         <div className="flex flex-col text-left justify-center items-center h-full mx-auto">
-          <div className="flex flex-col text-left">
-            <h3 className="font-bold text-5xl mb-8">Desa Cantigi Kulon</h3>
-            <div className="text-3xl">
+          <div className="flex flex-col text-left mt-10 lg:mt-0">
+            <h3 className="font-bold text-3xl lg:text-5xl mb-8">Desa Cantigi Kulon</h3>
+            <div className="lg:text-3xl">
               <p>Mawaddah Adil Jaya Unggul,</p>
               <p>Beriman Humanis Ikhlas Jujur</p>
               <p>Amanah dan Bermartabat</p>
@@ -17,8 +17,13 @@ export default function Kuwu() {
           </div>
         </div>
       </div>
-      <div className="relative w-1/2 flex justify-center items-end">
-        <div className="rounded-full absolute bg-red-500 -z-20 h-[600px] w-[600px] flex -bottom-[80px]" />
+      <div className="relative w-full lg:w-1/2 flex justify-center items-end">
+        <div className={clsx(
+          "rounded-full absolute bg-red-500 -z-20",
+          "xl:h-[600px] xl:w-[600px] flex -bottom-[80px]",
+          "h-[200px] w-[200px] hidden xl:flex",
+        )}
+        />
         <Image
           alt="kuwu"
           className="object-cover translate-y-4"
@@ -26,7 +31,7 @@ export default function Kuwu() {
           src="/images/kuwu.png"
           width={450}
         />
-        <div className="bg-white rounded-lg absolute p-2 bottom-10 w-[450px] flex justify-center">
+        <div className="bg-white rounded-lg absolute p-2 bottom-0 lg:bottom-10 w-full lg:w-[450px] flex justify-center">
           <span className="font-bold">CHAEROTUNNISA, S.Pd.I</span>
         </div>
       </div>

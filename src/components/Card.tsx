@@ -7,8 +7,7 @@ type Props = {
 
 export default function Card({ idx }: Props) {
   return (
-    <div className="bg-white w-[350px]">
-
+    <div className="w-full px-2 cursor-grab">
       <Image
         alt="umkm1"
         className="object-cover"
@@ -16,9 +15,9 @@ export default function Card({ idx }: Props) {
         src="/images/umkm1.jpeg"
         width={350}
       />
-      <div className="p-3 w-full h-[200px] overflow-hidden">
-        <h5>Ikan Asin {idx}</h5>
-        <p>Lorem ipsum dolor
+      <div className="p-3 h-[200px] overflow-hidden">
+        <h5 className="font-bold lg:text-xl">Ikan Asinan {idx}</h5>
+        <p className="lg:text-base text-sm">Lorem ipsum dolor
           sit amet consectetur,
           adipisicing elit. Dolores voluptas a,
           officia nostrum saepe reprehenderit ex.

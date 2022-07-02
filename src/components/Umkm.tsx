@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { useRef } from "react";
 import Slider, { Settings } from "react-slick";
 
@@ -10,6 +11,29 @@ const settings: Settings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 export default function Umkm() {
@@ -28,19 +52,37 @@ export default function Umkm() {
   };
 
   return (
-    <div className="flex flex-col w-full py-4 items-center justify-center mt-16">
-      <h4 className="text-5xl font-bold text-center mb-8">UMKM</h4>
-      <div className="max-w-screen-2xl relative">
-        <button className="absolute -left-16 top-1/2 z-30" type="button" onClick={prev}>
-          <i className="bx bx-chevron-left text-5xl" />
+    <div className="flex flex-col w-full py-4 items-center justify-center lg:mt-16 mt-8">
+      <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">UMKM</h4>
+      <div className="w-full lg:max-w-screen-2xl relative sm:p-3">
+        <button
+          className={clsx(
+            "absolute left-5 top-[calc(50%+20px)] z-30 h-[45px] w-[45px]",
+            "rounded-full bg-opacity-60 bg-black",
+            "hidden md:flex justify-center items-center",
+          )}
+          type="button"
+          onClick={prev}
+        >
+          <i className="bx bx-chevron-left text-5xl text-white" />
         </button>
-        <Slider ref={sliderRef} {...settings}>
-          {Array(15).fill("0").map((_, idx) => (
-            <Card idx={idx} key={idx} />
-          ))}
-        </Slider>
-        <button className="absolute -right-16 top-1/2 z-30" type="button" onClick={next}>
-          <i className="bx bx-chevron-right text-5xl" />
+        <div className="px-4">
+          <Slider ref={sliderRef} {...settings}>
+            {Array(15).fill("0").map((_, idx) => (
+              <Card idx={idx} key={idx} />
+            ))}
+          </Slider>
+        </div>
+        <button
+          className={clsx(
+            "absolute right-[30px] top-[calc(50%+20px)] z-30 h-[45px] w-[45px]",
+            "rounded-full bg-opacity-60 bg-black",
+            "hidden md:flex justify-center items-center",
+          )}
+          type="button"
+          onClick={next}
+        >
+          <i className="bx bx-chevron-right text-5xl text-white" />
         </button>
       </div>
     </div>

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Montserrat"],
+        default: ["Montserrat"],
       },
       colors: {
         main: "#970002",

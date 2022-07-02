@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import clsx from "clsx";
 
 export default function Header() {
   return (
-    <div className="flex justify-between px-[100px] py-4 w-full">
+    <div className="flex justify-between pl-4 xl:px-[100px] py-4 w-full">
       <div className="flex items-center">
         <Image
           alt="logo"
