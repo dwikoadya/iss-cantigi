@@ -6,11 +6,15 @@ export default function Kuwu() {
     // 641
     <div className="h-[720px] flex">
       <div className="w-1/2 text-lg">
-        <div className="flex flex-col justify-center items-center h-full mx-auto bg-purple-900">
-          <h3 className="font-bold text-5xl">Desa Cantigi Kulon</h3>
-          <p>Mawaddah Adil Jaya Unggul,</p>
-          <p>Beriman Humanis Ikhlas Jujur</p>
-          <p>Amanah dan Bermartabat</p>
+        <div className="flex flex-col text-left justify-center items-center h-full mx-auto">
+          <div className="flex flex-col text-left">
+            <h3 className="font-bold text-5xl mb-8">Desa Cantigi Kulon</h3>
+            <div className="text-3xl">
+              <p>Mawaddah Adil Jaya Unggul,</p>
+              <p>Beriman Humanis Ikhlas Jujur</p>
+              <p>Amanah dan Bermartabat</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="relative w-1/2 flex justify-center items-end">
