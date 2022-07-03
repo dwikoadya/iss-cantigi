@@ -11,6 +11,7 @@ import ApbDesa from "components/ApbDesa";
 import Umkm from "components/Umkm";
 import GaleriDesa from "components/GaleriDesa";
 import FooterTop from "components/FooterTop";
+import FooterBottom from "components/FooterBottom";
 
 const Home: NextPage = () => (
   <div className="w-full">
@@ -28,6 +29,7 @@ const Home: NextPage = () => (
     <Umkm />
     <GaleriDesa />
     <FooterTop />
+    <FooterBottom />
   </div>
 );
 

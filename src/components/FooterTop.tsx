@@ -3,8 +3,8 @@ import React from "react";
 
 export default function FooterTop() {
   return (
-    <div className="bg-red-700 flex flex-col items-start">
-      <div className="lg:w-[40%] w-full ">
+    <div className="bg-light flex flex-col lg:flex-row lg:items-start items-center py-10">
+      <div className="lg:w-[40%] lg:ml-9 mb-4">
         <Image
           alt="logoMobile"
           className="object-cover"
@@ -13,15 +13,15 @@ export default function FooterTop() {
           width={700}
         />
       </div>
-      <div className="lg:w-[60%] w-full mt-[70px]">
-        <h3 className="font-bold text-3xl text-white mb-2.5">Tertarik Untuk Menjelajah Lebih Jauh?</h3>
-        <span className="font-bold text-2xl text-white mb-2.5">Download Aplikasi eDESA Cantigi Kulon!</span>
-        <div className="text-lg text-white mb-2.5">
+      <div className="lg:w-[60%] lg:mt-16 lg:tracking-widest lg:-ml-20 text-left px-4 ">
+        <h3 className="font-bold text-xl text-white mb-2.5 lg:text-4xl">Tertarik Untuk Menjelajah Lebih Jauh?</h3>
+        <p className="font-medium text-lg text-white lg:text-3xl mb-2.5">Download Aplikasi eDESA Cantigi Kulon!</p>
+        <div className="text-sm text-white mb-4 lg:text-base">
           <p>Desa Cantigi Kulon memiliki aplikasi digital desa yang dapat</p>
           <p>membantu memudahkan segala kebutuhan administrasi anda dan</p>
           <p>membantu mengembangkan UMKM Desa</p>
         </div>
-        <button className="rounded-lg bg-white text-red-700 font-bold text-lg py-5 px-11" type="button">Download Disini</button>
+        <button className="rounded-lg bg-white text-light font-bold py-2 px-10 w-full lg:w-auto" type="button">Download Disini</button>
       </div>
     </div>
   );

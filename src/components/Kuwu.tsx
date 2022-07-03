@@ -9,7 +9,7 @@ export default function Kuwu() {
         <div className="flex flex-col text-left justify-center items-center h-full mx-auto">
           <div className="flex flex-col text-left mt-10 lg:mt-0">
             <h3 className="font-bold text-3xl lg:text-5xl mb-8">Desa Cantigi Kulon</h3>
-            <div className="lg:text-3xl">
+            <div className="lg:text-3xl text-center lg:text-left">
               <p>Mawaddah Adil Jaya Unggul,</p>
               <p>Beriman Humanis Ikhlas Jujur</p>
               <p>Amanah dan Bermartabat</p>
@@ -19,7 +19,7 @@ export default function Kuwu() {
       </div>
       <div className="relative w-full lg:w-1/2 flex justify-center items-end">
         <div className={clsx(
-          "rounded-full absolute bg-red-500 -z-20",
+          "rounded-full absolute bg-dark -z-20",
           "xl:h-[600px] xl:w-[600px] flex -bottom-[80px]",
           "h-[200px] w-[200px] hidden xl:flex",
         )}

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function VisiMisi() {
   return (
-    <div className="flex bg-red-800 text-center items-center text-white flex-col">
+    <div className="flex bg-light text-center items-center text-white flex-col">
       <div className="flex flex-col text-center tracking-wider lg:text-2xl px-4 lg:px-0">
         <h3 className="font-bold lg:text-4xl text-2xl lg:my-14 my-8">Visi Cantigi Kulon</h3>
         <p>“Membentuk masyarakat yang berakhlak, bertaqwa dan berpendidikan dengan</p>

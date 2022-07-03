@@ -2,29 +2,24 @@ import Image from "next/image";
 import React from "react";
 
 type Props = {
-  idx: number;
+  poto: string;
+  title: string;
+  desc: string
 }
 
-export default function Card({ idx }: Props) {
+export default function Card({ poto, title, desc }: Props) {
   return (
     <div className="w-full px-2 cursor-grab">
       <Image
-        alt="umkm1"
+        alt="umkm"
         className="object-cover"
         height={300}
-        src="/images/umkm1.jpeg"
+        src={poto}
         width={350}
       />
-      <div className="p-3 h-[200px] overflow-hidden">
-        <h5 className="font-bold lg:text-xl">Ikan Asinan {idx}</h5>
-        <p className="lg:text-base text-sm">Lorem ipsum dolor
-          sit amet consectetur,
-          adipisicing elit. Dolores voluptas a,
-          officia nostrum saepe reprehenderit ex.
-          Optio obcaecati blanditiis possimus esse, non,
-          libero modi omnis tempora,
-          illo accusantium vero minima.
-        </p>
+      <div className="p-1 h-[200px] overflow-hidden">
+        <h5 className="font-bold lg:text-xl">{title}</h5>
+        <p className="lg:text-base text-sm">{desc}</p>
       </div>
     </div>
   );

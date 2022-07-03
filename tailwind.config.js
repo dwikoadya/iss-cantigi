@@ -10,7 +10,8 @@ module.exports = {
         default: ["Montserrat"],
       },
       colors: {
-        main: "#970002",
+        dark: "#970002",
+        light: "#AF0406",
       },
     },
   },

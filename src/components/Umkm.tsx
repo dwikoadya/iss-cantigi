@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React, { useRef } from "react";
 import Slider, { Settings } from "react-slick";
 
+import slide from "constant/slide";
 import Card from "./Card";
 
 const settings: Settings = {
@@ -68,8 +69,8 @@ export default function Umkm() {
         </button>
         <div className="px-4">
           <Slider ref={sliderRef} {...settings}>
-            {Array(15).fill("0").map((_, idx) => (
-              <Card idx={idx} key={idx} />
+            {slide.map((obj, idx) => (
+              <Card desc={obj.desc} key={idx} poto={obj.poto} title={obj.title} />
             ))}
           </Slider>
         </div>
