@@ -16,7 +16,7 @@ import FooterBottom from "components/FooterBottom";
 const Home: NextPage = () => (
   <div className="w-full">
     <Head>
-      <title>Create Next App</title>
+      <title>Cantigi Kulon</title>
     </Head>
     <Header />
     <Banner />
