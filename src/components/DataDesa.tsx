@@ -1,20 +1,25 @@
 import React from "react";
 
-const data = [{
-  value: "527Ha",
-  title: "Luas Desa/Kelurahan (Ha)",
-}, {
-  value: "2,484",
-  title: "Jumlah Penduduk Laki-Laki",
-}, {
-  value: "2,470",
-  title: "Jumlah Penduduk Perempuan",
-}, {
-  value: "1,418",
-  title: "Jumlah Kepala Keluarga",
-}];
+type IGenders = {
+  male: number
+  female: number
+}
 
-export default function DataDesa() {
+export default function DataDesa({ male, female }: IGenders) {
+  const data = [{
+    value: "527Ha",
+    title: "Luas Desa/Kelurahan (Ha)",
+  }, {
+    value: male,
+    title: "Jumlah Penduduk Laki-Laki",
+  }, {
+    value: female,
+    title: "Jumlah Penduduk Perempuan",
+  }, {
+    value: "1,418",
+    title: "Jumlah Kepala Keluarga",
+  }];
+
   return (
     <div className="flex h-[400px] bg-light justify-center items-center lg:px-48 w-full">
       <div className="flex items-center flex-col w-full">

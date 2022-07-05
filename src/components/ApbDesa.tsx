@@ -9,7 +9,7 @@ export default function ApbDesa() {
       <div className="flex flex-col md:flex-row justify-around md:max-w-screen-lg w-[90%] mx-auto gap-8">
         {
           button.map((item) => (
-            <button className="rounded-lg bg-white text-light font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg" key={item} type="button">
+            <button className="rounded-lg bg-white hover:bg-sky-700 text-light font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg" key={item} type="button">
               {item}
             </button>
           ))
