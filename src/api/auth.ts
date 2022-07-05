@@ -6,7 +6,7 @@ const credential = {
   password: process.env.NEXT_PUBLIC_PASSWORD,
   withCredential: { withCredentials: true },
 };
-
+//
 // eslint-disable-next-line import/prefer-default-export
 export const login = async () => {
   try {
