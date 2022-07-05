@@ -1,11 +1,16 @@
 /* eslint-disable import/prefer-default-export */
-import { getDataGenders } from "api/data-desa";
 import React from "react";
 
-import { Genders } from "constant/types/state";
+import { Genders, Banners } from "constant/types/state";
+import { getDataGenders } from "api/data-desa";
+import { getDataBanners } from "api/data-banners";
 
 type ISetGenders = {
   setGenders: React.Dispatch<React.SetStateAction<Genders>>
+}
+
+type ISetBanners = {
+  setBanners: React.Dispatch<React.SetStateAction<Banners[]>>
 }
 
 export const dataGender = async ({ setGenders }: ISetGenders) => {
@@ -15,5 +20,12 @@ export const dataGender = async ({ setGenders }: ISetGenders) => {
       male: res.callback.male,
       female: res.callback.female,
     });
+  }
+};
+
+export const dataBanner = async ({ setBanners }: ISetBanners) => {
+  const res = await getDataBanners();
+  if (res.callback) {
+    setBanners(res.callback);
   }
 };

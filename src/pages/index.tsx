@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
 import { login } from "api/auth";
-import { dataGender } from "utils/landing-page-api";
+import { dataGender, dataBanner } from "utils/landing-page-api";
 
-import { Genders } from "constant/types/state";
+import { Banners, Genders } from "constant/types/state";
 
 import Header from "components/Header";
 import Banner from "components/Banner";
@@ -28,6 +28,8 @@ const Home: NextPage = () => {
     female: 0,
   });
 
+  const [banners, setBanners] = useState<Banners[]>([]);
+
   useEffect(() => {
     const token = localStorage.getItem("access_token");
 
@@ -38,12 +40,14 @@ const Home: NextPage = () => {
           localStorage.setItem("access_token", res.callback.accessToken);
           setTimeout(() => {
             dataGender({ setGenders });
+            dataBanner({ setBanners });
           }, 500);
         }
       };
       data();
     } else {
       dataGender({ setGenders });
+      dataBanner({ setBanners });
     }
   }, []);
 
@@ -53,7 +57,7 @@ const Home: NextPage = () => {
         <title>Cantigi Kulon</title>
       </Head>
       <Header />
-      <Banner />
+      <Banner banners={banners} />
       <Kuwu />
       <DataDesa {...genders} />
       <StrukturOrganisasi />

@@ -8,3 +8,11 @@ export type Genders = {
   male: number
   female: number
 }
+
+export type Banners = {
+  active: boolean
+  animation: string
+  duration: string
+  id: string
+  img_url: string
+}

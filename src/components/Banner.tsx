@@ -3,11 +3,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import Slider, { Settings } from "react-slick";
 
-const slides = [
-  "/images/sliderCantigi1.png",
-  "/images/sliderCantigi2.png",
-  "/images/sliderCantigi3.png",
-];
+import { Banners } from "constant/types/state";
 
 const settings: Settings = {
   dots: false,
@@ -19,7 +15,7 @@ const settings: Settings = {
   autoplaySpeed: 2000,
 };
 
-export default function Banner() {
+export default function Banner({ banners }:{banners: Banners[]}) {
   const sliderRef = useRef<Slider>(null);
 
   const next = () => {
@@ -47,13 +43,14 @@ export default function Banner() {
         <i className="bx bx-chevron-left text-5xl text-white" />
       </button>
       <Slider ref={sliderRef} {...settings}>
-        {slides.map((path, idx) => (
+        {banners.map((path, idx) => (
           <div className="flex-center bg-light w-full relative sm:h-[720px] h-[300px]" key={idx}>
             <Image
               alt="slider"
               className="object-contain"
               layout="fill"
-              src={path}
+              priority={idx === 0}
+              src={path.img_url}
             />
           </div>
         ))}
