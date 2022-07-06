@@ -69,7 +69,6 @@ const Home: NextPage = () => {
       dataBanner({ setBanners });
       dataProfile({ setProfile });
       dataConfigs({ setConfigs });
-      console.log(configs);
     }
   }, []);
 
