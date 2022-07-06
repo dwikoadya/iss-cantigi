@@ -22,3 +22,14 @@ export type Profile = {
   slogan: string
   pic_phone: string
 }
+
+export type Configs = {
+  site_name: string
+  site_tagline: string
+  contact: string
+  email: string
+  facebook: string
+  instagram: string
+  youtube: string
+  tiktok: string
+}

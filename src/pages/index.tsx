@@ -4,8 +4,12 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
 import { login } from "api/auth";
-import { dataGender, dataBanner, dataProfile } from "utils/landing-page-api";
-import { Banners, Genders, Profile } from "constant/types/state";
+import {
+  dataGender, dataBanner, dataProfile, dataConfigs,
+} from "utils/landing-page-api";
+import {
+  Banners, Genders, Profile, Configs,
+} from "constant/types/state";
 
 import Header from "components/Header";
 import Banner from "components/Banner";
@@ -32,6 +36,16 @@ const Home: NextPage = () => {
     slogan: "",
     pic_phone: "",
   });
+  const [configs, setConfigs] = useState<Configs>({
+    site_name: "",
+    site_tagline: "",
+    contact: "",
+    email: "",
+    facebook: "",
+    instagram: "",
+    youtube: "",
+    tiktok: "",
+  });
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
@@ -45,6 +59,7 @@ const Home: NextPage = () => {
             dataGender({ setGenders });
             dataBanner({ setBanners });
             dataProfile({ setProfile });
+            dataConfigs({ setConfigs });
           }, 500);
         }
       };
@@ -53,6 +68,8 @@ const Home: NextPage = () => {
       dataGender({ setGenders });
       dataBanner({ setBanners });
       dataProfile({ setProfile });
+      dataConfigs({ setConfigs });
+      console.log(configs);
     }
   }, []);
 
@@ -63,17 +80,16 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Banner banners={banners} />
-      <Kuwu {...profile} />
+      <Kuwu {...profile} {...configs} />
       <DataDesa {...genders} />
       <StrukturOrganisasi />
       <VisiMisi />
-      <Motto {...profile} />
+      <Motto {...profile} {...configs} />
       <ApbDesa />
       <Umkm />
       <GaleriDesa />
       <FooterTop />
-      <FooterBottom {...profile} />
-      {/* <Contoh /> */}
+      <FooterBottom {...profile} {...configs} />
     </div>
   );
 };

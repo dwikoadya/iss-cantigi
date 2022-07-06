@@ -6,13 +6,18 @@ type IMotto = {
   slogan: string
 }
 
-export default function Kuwu({ slogan }: IMotto) {
+type ISiteName = {
+  site_name: string
+}
+type MixinType = IMotto & ISiteName
+
+export default function Kuwu({ slogan, site_name }: MixinType) {
   return (
     <div className="flex flex-col lg:flex-row">
       <div className="lg:w-1/2 w-full text-lg">
         <div className="flex flex-col lg:w-1/2 text-left justify-center items-center h-full mx-auto">
           <div className="flex flex-col text-center lg:text-left mt-10 lg:mt-0">
-            <h3 className="font-bold text-3xl lg:text-5xl mb-8">Desa Cantigi Kulon</h3>
+            <h3 className="font-bold text-3xl lg:text-5xl mb-8">{site_name}</h3>
             <div className="lg:text-3xl text-center lg:text-left">
               <p>{slogan}</p>
             </div>

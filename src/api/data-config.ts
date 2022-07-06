@@ -3,11 +3,11 @@
 import API, { IConfig } from "helpers/api";
 import * as URL from "constant/url-api";
 
-export const getProfileDesa = async () => {
+export const getDataConfigs = async () => {
   try {
     const config: IConfig = {
       method: "GET",
-      path: URL.PROFILE,
+      path: URL.CONFIGS,
       withCredential: { withCredentials: true },
       data: {
         shouldSuccess: true,

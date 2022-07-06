@@ -1,10 +1,12 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Props = {
   children: React.ReactNode;
+  link: string
 }
 
-export default function IconFrame({ children }: Props) {
+export default function IconFrame({ children, link }: Props) {
   const [color, setColor] = useState(true);
 
   return (
@@ -14,7 +16,11 @@ export default function IconFrame({ children }: Props) {
         type="button"
         onClick={() => setColor(!color)}
       >
-        {children}
+        <Link href={`${link}`}>
+          <a className="flex-center" target="_blank">
+            {children}
+          </a>
+        </Link>
       </button>
     </div>
   );
