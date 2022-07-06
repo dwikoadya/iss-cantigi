@@ -19,7 +19,7 @@ export default function Kuwu() {
       </div>
       <div className="relative w-full lg:w-1/2 flex justify-center items-end">
         <div className={clsx(
-          "rounded-full absolute bg-dark -z-20",
+          "rounded-full absolute bg-default -z-20",
           "xl:h-[600px] xl:w-[600px] flex -bottom-[80px]",
           "h-[200px] w-[200px] hidden xl:flex",
         )}

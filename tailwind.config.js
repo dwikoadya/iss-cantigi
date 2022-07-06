@@ -4,14 +4,16 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
         default: ["Montserrat"],
       },
       colors: {
-        dark: "#970002",
+        default: "#970002",
         light: "#AF0406",
+        dark: "#171F2C",
         buttonToggle: "#FFB416",
       },
     },

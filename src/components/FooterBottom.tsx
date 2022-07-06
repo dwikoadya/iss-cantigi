@@ -3,7 +3,7 @@ import IconFrame from "./IconFrame";
 
 export default function FooterBottom() {
   return (
-    <div className="bg-dark flex justify-evenly flex-col lg:flex-row">
+    <div className="bg-default flex justify-evenly flex-col lg:flex-row">
       <div className="flex lg:w-1/2 w-full lg:p-24 p-12">
         <div className="lg:flex-row w-full flex-col flex md:gap-x-48 lg:gap-x-30">
           <div className="flex flex-col text-white">
@@ -59,7 +59,7 @@ export default function FooterBottom() {
             <i className="bx bxl-facebook" />
           </IconFrame>
           <IconFrame>
-            <i className="bx bxl-tiktok" />
+            <i className="bx bxl-twitter" />
           </IconFrame>
           <IconFrame>
             <i className="bx bxl-youtube" />

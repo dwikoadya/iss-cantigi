@@ -1,7 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function FooterTop() {
+  const [color, setColor] = useState(true);
   return (
     <div className="bg-light flex flex-col lg:flex-row lg:items-start items-center py-10">
       <div className="lg:w-[40%] lg:ml-9 mb-4">
@@ -21,7 +22,13 @@ export default function FooterTop() {
           <p>membantu memudahkan segala kebutuhan administrasi anda dan</p>
           <p>membantu mengembangkan UMKM Desa</p>
         </div>
-        <button className="rounded-lg bg-white focus:bg-buttonToggle text-light focus:text-white font-bold py-2 px-10 w-full lg:w-auto" type="button">Download Disini</button>
+        <button
+          className={`rounded-lg ${ color ? "bg-white" : "bg-buttonToggle"} ${color ? "text-light" : "text-white"} font-bold py-2 px-10 w-full lg:w-auto`}
+          type="button"
+          onClick={() => setColor(!color)}
+        >
+          Download Disini
+        </button>
       </div>
     </div>
   );

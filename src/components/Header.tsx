@@ -21,6 +21,13 @@ export default function Header() {
           src="/images/logoEDesa.png"
           width={200}
         />
+        <div className="items-center flex flex-col justify-center">
+          <p className="font-semibold">Mode Gelap</p>
+          <div className="lg:w-24 lg:h-9 w-10 h-6 flex items-center bg-light rounded-full cursor-pointer">
+            <div className="bg-white md:w-6 md:h-6 h-8 w-8 rounded-full mx-2 " />
+            <p className="text-white font-semibold mt-1">OFF</p>
+          </div>
+        </div>
       </div>
     </div>
   );
