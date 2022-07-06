@@ -1,7 +1,12 @@
 import React from "react";
 import IconFrame from "./IconFrame";
 
-export default function FooterBottom() {
+type IProfile = {
+  address: string
+  pic_phone: string
+}
+
+export default function FooterBottom({ address, pic_phone }: IProfile) {
   return (
     <div className="bg-default flex justify-evenly flex-col lg:flex-row">
       <div className="flex lg:w-1/2 w-full lg:p-24 p-12">
@@ -18,8 +23,7 @@ export default function FooterBottom() {
               <i className="bx bx-location-plus mr-5 text-2xl -translate-y-1" />
               <div className="flex flex-col">
                 <h3 className="font-bold mb-2.5">Alamat Kantor Desa</h3>
-                <p className="text-sm">M67G+P3V, Cantigi Kulon, Kec. Cantigi,</p>
-                <p className="text-sm">Kab. Indramayu, Jawa Barat 45258</p>
+                <p className="text-sm">{address}</p>
               </div>
             </div>
           </div>
@@ -35,7 +39,7 @@ export default function FooterBottom() {
               <i className="bx bx-phone mr-5 text-2xl -translate-y-1" />
               <div className="flex flex-col">
                 <h3 className="font-bold mb-2.5">Telepon 2</h3>
-                <p className="text-sm">0896-1956-7260 </p>
+                <p className="text-sm">{pic_phone}</p>
               </div>
             </div>
             <div className="flex flex-row">

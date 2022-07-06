@@ -16,3 +16,9 @@ export type Banners = {
   id: string
   img_url: string
 }
+
+export type Profile = {
+  address: string
+  slogan: string
+  pic_phone: string
+}

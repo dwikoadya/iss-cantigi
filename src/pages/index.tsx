@@ -4,9 +4,8 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
 import { login } from "api/auth";
-import { dataGender, dataBanner } from "utils/landing-page-api";
-
-import { Banners, Genders } from "constant/types/state";
+import { dataGender, dataBanner, dataProfile } from "utils/landing-page-api";
+import { Banners, Genders, Profile } from "constant/types/state";
 
 import Header from "components/Header";
 import Banner from "components/Banner";
@@ -20,7 +19,6 @@ import Umkm from "components/Umkm";
 import GaleriDesa from "components/GaleriDesa";
 import FooterTop from "components/FooterTop";
 import FooterBottom from "components/FooterBottom";
-// import Contoh from "components/Contoh";
 
 const Home: NextPage = () => {
   const [genders, setGenders] = useState<Genders>({
@@ -29,6 +27,11 @@ const Home: NextPage = () => {
   });
 
   const [banners, setBanners] = useState<Banners[]>([]);
+  const [profile, setProfile] = useState<Profile>({
+    address: "",
+    slogan: "",
+    pic_phone: "",
+  });
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
@@ -41,6 +44,7 @@ const Home: NextPage = () => {
           setTimeout(() => {
             dataGender({ setGenders });
             dataBanner({ setBanners });
+            dataProfile({ setProfile });
           }, 500);
         }
       };
@@ -48,6 +52,7 @@ const Home: NextPage = () => {
     } else {
       dataGender({ setGenders });
       dataBanner({ setBanners });
+      dataProfile({ setProfile });
     }
   }, []);
 
@@ -58,16 +63,16 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Banner banners={banners} />
-      <Kuwu />
+      <Kuwu {...profile} />
       <DataDesa {...genders} />
       <StrukturOrganisasi />
       <VisiMisi />
-      <Motto />
+      <Motto {...profile} />
       <ApbDesa />
       <Umkm />
       <GaleriDesa />
       <FooterTop />
-      <FooterBottom />
+      <FooterBottom {...profile} />
       {/* <Contoh /> */}
     </div>
   );
