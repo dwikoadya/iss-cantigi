@@ -12,7 +12,7 @@ const slides = [
 
 export default function GaleriDesa() {
   return (
-    <div className="flex flex-col w-full items-center justify-center lg:mt-16 lg:py-24 py-12">
+    <div className="flex flex-col w-full items-center justify-center lg:mt-16 lg:py-24 py-12 dark:text-white">
       <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">Galeri Desa</h4>
       <div className="grid gap-4 grid-cols-1 px-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
         {

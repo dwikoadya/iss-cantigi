@@ -13,12 +13,12 @@ type MixinType = IMotto & ISiteName
 
 export default function Kuwu({ slogan, site_name }: MixinType) {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row dark:bg-dark">
       <div className="lg:w-1/2 w-full text-lg">
         <div className="flex flex-col lg:w-1/2 text-left justify-center items-center h-full mx-auto">
           <div className="flex flex-col text-center lg:text-left mt-10 lg:mt-0">
-            <h3 className="font-bold text-3xl lg:text-5xl mb-8">{site_name}</h3>
-            <div className="lg:text-3xl text-center lg:text-left">
+            <h3 className="font-bold text-3xl lg:text-5xl mb-8 dark:text-white">{site_name}</h3>
+            <div className="lg:text-3xl text-center lg:text-left dark:text-white">
               <p>{slogan}</p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Kuwu({ slogan, site_name }: MixinType) {
       </div>
       <div className="relative w-full lg:w-1/2 flex justify-center items-end">
         <div className={clsx(
-          "rounded-full absolute bg-default -z-20",
+          "rounded-full absolute bg-default dark:bg-white",
           "xl:h-[600px] xl:w-[600px] flex -bottom-[80px]",
           "h-[200px] w-[200px] hidden xl:flex",
         )}
@@ -38,8 +38,8 @@ export default function Kuwu({ slogan, site_name }: MixinType) {
           src="/images/kuwu.png"
           width={450}
         />
-        <div className="bg-white rounded-lg absolute p-2 bottom-0 lg:bottom-10 w-full lg:w-[450px] flex justify-center">
-          <span className="font-bold">CHAEROTUNNISA, S.Pd.I</span>
+        <div className="bg-white dark:bg-light rounded-lg absolute p-2 bottom-4 lg:bottom-10 w-full lg:w-[450px] flex justify-center">
+          <span className="font-bold dark:text-white">CHAEROTUNNISA, S.Pd.I</span>
         </div>
       </div>
     </div>

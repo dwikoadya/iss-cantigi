@@ -21,7 +21,7 @@ export default function DataDesa({ male, female }: IGenders) {
   }];
 
   return (
-    <div className="flex h-[400px] bg-light justify-center items-center lg:px-48 w-full">
+    <div className="flex h-[400px] bg-light relative z-10 justify-center items-center lg:px-48 w-full">
       <div className="flex items-center flex-col w-full">
         <h3 className="font-bold lg:text-5xl text-2xl text-white lg:mb-20 mb-4">Data Desa</h3>
         <div className="flex flex-col gap-x-8 lg:flex-row text-center text-white justify-around w-full">

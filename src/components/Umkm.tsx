@@ -53,7 +53,7 @@ export default function Umkm() {
   };
 
   return (
-    <div className="flex flex-col w-full py-4 items-center justify-center lg:mt-16 mt-8">
+    <div className="flex flex-col w-full py-4 items-center justify-center lg:mt-16 mt-8 dark:text-white">
       <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">UMKM</h4>
       <div className="w-full lg:max-w-screen-2xl relative sm:p-3">
         <button

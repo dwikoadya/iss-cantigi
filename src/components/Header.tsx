@@ -9,8 +9,6 @@ export default function Header() {
 
   const onChangeTheme = () => (theme === "dark" ? setTheme("light") : setTheme("dark"));
 
-  console.log(theme);
-
   return (
     <div className="flex dark:bg-light justify-between pl-4 xl:px-[100px] py-4 w-full transition-all">
       <div className="flex items-center">
@@ -23,7 +21,7 @@ export default function Header() {
         />
       </div>
       <div className="flex items-center mb-[9px]">
-        <div className="mr-10">
+        <div className="mr-10 hidden lg:flex">
           <Image
             alt="logo"
             className="object-cover"
@@ -33,7 +31,7 @@ export default function Header() {
           />
         </div>
         <button
-          className="items-center flex flex-col justify-center -mt-2"
+          className="items-center md:flex flex-col justify-center -mt-2 hidden"
           type="button"
           onClick={onChangeTheme}
         >
@@ -59,6 +57,19 @@ export default function Header() {
             </p>
           </div>
         </button>
+        <div className="flex md:hidden text-3xl px-6 translate-y-2">
+          {
+            theme === "dark" ? (
+              <button type="button" onClick={() => setTheme("light")}>
+                <i className="bx bxs-sun text-white" />
+              </button>
+            ) : (
+              <button type="button" onClick={() => setTheme("dark")}>
+                <i className="bx bxs-moon text-light" />
+              </button>
+            )
+          }
+        </div>
       </div>
     </div>
   );

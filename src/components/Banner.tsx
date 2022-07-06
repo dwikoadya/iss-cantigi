@@ -44,7 +44,7 @@ export default function Banner({ banners }:{banners: Banners[]}) {
       </button>
       <Slider ref={sliderRef} {...settings}>
         {banners.map((path, idx) => (
-          <div className="flex-center bg-light w-full relative sm:h-[720px] h-[300px]" key={idx}>
+          <div className="flex-center bg-light dark:bg-gray-800 w-full relative sm:h-[720px] h-[300px]" key={idx}>
             <Image
               alt="slider"
               className="object-contain"

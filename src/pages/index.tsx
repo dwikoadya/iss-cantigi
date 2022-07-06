@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import { login } from "api/auth";
 import {
@@ -11,7 +12,6 @@ import {
   Banners, Genders, Profile, Configs,
 } from "constant/types/state";
 
-import Header from "components/Header";
 import Banner from "components/Banner";
 import Kuwu from "components/Kuwu";
 import DataDesa from "components/DataDesa";
@@ -23,6 +23,11 @@ import Umkm from "components/Umkm";
 import GaleriDesa from "components/GaleriDesa";
 import FooterTop from "components/FooterTop";
 import FooterBottom from "components/FooterBottom";
+
+const Header = dynamic(
+  () => import("../components/Header"),
+  { ssr: false },
+);
 
 const Home: NextPage = () => {
   const [genders, setGenders] = useState<Genders>({
