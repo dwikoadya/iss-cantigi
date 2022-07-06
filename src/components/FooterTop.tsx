@@ -21,7 +21,7 @@ export default function FooterTop() {
           <p>membantu memudahkan segala kebutuhan administrasi anda dan</p>
           <p>membantu mengembangkan UMKM Desa</p>
         </div>
-        <button className="rounded-lg bg-white text-light font-bold py-2 px-10 w-full lg:w-auto" type="button">Download Disini</button>
+        <button className="rounded-lg bg-white focus:bg-buttonToggle text-light focus:text-white font-bold py-2 px-10 w-full lg:w-auto" type="button">Download Disini</button>
       </div>
     </div>
   );

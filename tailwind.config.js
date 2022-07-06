@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         dark: "#970002",
         light: "#AF0406",
+        buttonToggle: "#FFB416",
       },
     },
   },
