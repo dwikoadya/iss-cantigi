@@ -23,7 +23,7 @@ export default function FooterBottom({
   return (
     <div className="bg-default flex justify-evenly flex-col lg:flex-row">
       <div className="flex lg:w-1/2 w-full lg:p-24 p-12">
-        <div className="lg:flex-row w-full flex-col flex md:gap-x-48 lg:gap-x-30">
+        <div className="lg:flex-row w-full flex-col flex md:gap-x-48 lg:gap-x-20">
           <div className="flex flex-col text-white">
             <div className="flex flex-row mb-8">
               <i className="bx bx-time-five mr-5 text-2xl -translate-y-1" />
@@ -66,7 +66,7 @@ export default function FooterBottom({
         </div>
       </div>
 
-      <div className="lg:p-24 p-12 text-white flex justify-center lg:items-end items-center flex-col">
+      <div className="lg:p-24 p-12 text-white flex justify-center lg:justify-start lg:items-end items-center flex-col">
         <h3 className="font-bold mb-8 text-lg">Ikuti Kami</h3>
         <div className="flex flex-row lg:gap-9 gap-2 lg:mb-16 mb-8">
           <IconFrame link={instagram}>

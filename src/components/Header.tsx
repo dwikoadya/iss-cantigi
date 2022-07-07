@@ -10,7 +10,7 @@ export default function Header() {
   const onChangeTheme = () => (theme === "dark" ? setTheme("light") : setTheme("dark"));
 
   return (
-    <div className="flex dark:bg-light justify-between pl-4 xl:px-[100px] py-4 w-full transition-all">
+    <div className="flex dark:bg-light justify-between pl-4 sm:px-8 xl:px-[100px] py-4 w-full transition-all">
       <div className="flex items-center">
         <Image
           alt="logo"
@@ -36,7 +36,7 @@ export default function Header() {
           onClick={onChangeTheme}
         >
           <p className="font-semibold cursor-default dark:text-white">Mode Gelap</p>
-          <div className="lg:w-24 lg:h-9 w-10 h-6 flex items-center bg-light dark:bg-white rounded-full">
+          <div className="w-24 :h-9 flex items-center bg-light dark:bg-white rounded-full">
             <div className={clsx(
               "bg-white dark:bg-light md:w-6 md:h-6 h-7 w-7 rounded-full transition-all",
               theme === "dark" && "translate-x-[66px]",
@@ -61,11 +61,11 @@ export default function Header() {
           {
             theme === "dark" ? (
               <button type="button" onClick={() => setTheme("light")}>
-                <i className="bx bxs-sun text-white" />
+                <i className="bx bxs-sun text-white text-3xl" />
               </button>
             ) : (
               <button type="button" onClick={() => setTheme("dark")}>
-                <i className="bx bxs-moon text-light" />
+                <i className="bx bxs-moon text-light text-3xl" />
               </button>
             )
           }

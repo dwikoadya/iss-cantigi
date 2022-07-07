@@ -23,6 +23,7 @@ import Umkm from "components/Umkm";
 import GaleriDesa from "components/GaleriDesa";
 import FooterTop from "components/FooterTop";
 import FooterBottom from "components/FooterBottom";
+import ScrollToTop from "components/ScrollToTop";
 
 const Header = dynamic(
   () => import("../components/Header"),
@@ -94,6 +95,7 @@ const Home: NextPage = () => {
       <GaleriDesa />
       <FooterTop />
       <FooterBottom {...profile} {...configs} />
+      <ScrollToTop />
     </div>
   );
 };

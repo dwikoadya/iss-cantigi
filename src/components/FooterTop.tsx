@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function FooterTop() {
@@ -27,7 +28,11 @@ export default function FooterTop() {
           type="button"
           onClick={() => setColor(!color)}
         >
-          Download Disini
+          <Link href="https://play.google.com/store/apps/details?id=com.edesatsm">
+            <a target="_blank">
+              Download Disini
+            </a>
+          </Link>
         </button>
       </div>
     </div>
