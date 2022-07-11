@@ -82,34 +82,42 @@ export default function Umkm() {
       <div className="w-full lg:max-w-screen-2xl relative sm:p-3">
         <button
           className={clsx(
-            "absolute left-5 top-[calc(50%+20px)] z-30 h-[45px] w-[45px]",
-            "rounded-full bg-opacity-60 bg-black",
+            "absolute -left-20 top-[calc(25%+20px)]",
             "hidden md:flex justify-center items-center",
           )}
           type="button"
           onClick={prev}
         >
-          <i className="bx bx-chevron-left text-5xl text-white" />
+          <i className="bx bx-chevron-left text-7xl text-black" />
         </button>
         <div className="px-4">
           <Slider ref={sliderRef} {...settings}>
             {slide.map((obj, idx) => (
               <button key={idx} type="button" onClick={() => setIsOpen(!isOpen)}>
-                <Card desc={obj.desc} poto={obj.poto} title={obj.title} />
+                <Card
+                  classCard="overflow-hidden flex flex-col gap-3 mt-3"
+                  classDesc="lg:text-base text-sm"
+                  classTitle="font-bold lg:text-xl"
+                  desc={obj.desc}
+                  height={300}
+                  poto={obj.poto}
+                  time={new Date()}
+                  title={obj.title}
+                  width={350}
+                />
               </button>
             ))}
           </Slider>
         </div>
         <button
           className={clsx(
-            "absolute right-[30px] top-[calc(50%+20px)] z-30 h-[45px] w-[45px]",
-            "rounded-full bg-opacity-60 bg-black",
+            "absolute -right-20 top-[calc(25%+20px)] h-[45px]",
             "hidden md:flex justify-center items-center",
           )}
           type="button"
           onClick={next}
         >
-          <i className="bx bx-chevron-right text-5xl text-white" />
+          <i className="bx bx-chevron-right text-7xl text-black" />
         </button>
       </div>
     </div>

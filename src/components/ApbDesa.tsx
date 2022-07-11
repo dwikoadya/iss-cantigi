@@ -14,7 +14,8 @@ export default function ApbDesa() {
           className={`rounded-lg ${pendapatan ? "bg-white" : "bg-buttonToggle"} ${pendapatan ? "text-light" : "text-white"} font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg`}
           type="button"
           onClick={() => setPendapatan(!pendapatan)}
-        >Pendapatan
+        >
+          <a href="https://docs.google.com/spreadsheets/d/1X73g6QRMfj0c5kQCHLgpwWYx-cOWf11zTfpCOEFKY_0/edit?usp=sharing" rel="noreferrer" target="_blank">Pendapatan</a>
         </button>
         <button
           className={`rounded-lg ${belanja ? "bg-white" : "bg-buttonToggle"} ${belanja ? "text-light" : "text-white"} font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg`}

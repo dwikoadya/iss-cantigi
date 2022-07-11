@@ -20,4 +20,36 @@ const slide = [{
   desc: "Cumi kering merupakan produk asli Desa Cantigi Kulon yang diambil langsung dari laut. Produk cumi kering ini sangat fresh dan harga terjangkau. Produk cumi kering ini diproduksi oleh salah satu warga Desa Cantigi Kulon tepatnya di RT 02 RW 01.",
 }];
 
+export const slideGaleri = [{
+  image: "/images/galeriDesa1.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-05-07"),
+}, {
+  image: "/images/galeriDesa2.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-07-07"),
+}, {
+  image: "/images/galeriDesa3.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-06-07"),
+}, {
+  image: "/images/galeriDesa4.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-07-11"),
+}, {
+  image: "/images/galeriDesa5.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-04-01"),
+}, {
+  image: "/images/galeriDesa6.jpeg",
+  title: "Judul Berita",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  time: new Date("2022-03-05"),
+}];
+
 export default slide;
