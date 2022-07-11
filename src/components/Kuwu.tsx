@@ -17,7 +17,7 @@ export default function Kuwu({ slogan, site_name }: MixinType) {
       <div className="lg:w-1/2 w-full text-lg">
         <div className="flex flex-col lg:w-1/2 text-left justify-center items-center h-full mx-auto">
           <div className="flex flex-col text-center lg:text-left mt-10 lg:mt-0">
-            <h3 className="font-bold text-3xl lg:text-5xl mb-8 dark:text-white">{site_name}</h3>
+            <h3 className="font-bold text-3xl lg:text-5xl mb-8 dark:text-white">{`Desa ${site_name}`}</h3>
             <div className="lg:text-3xl text-center lg:text-left dark:text-white">
               <p>{slogan}</p>
             </div>

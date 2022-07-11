@@ -88,12 +88,12 @@ const Home: NextPage = () => {
       <Kuwu {...profile} {...configs} />
       <DataDesa {...genders} />
       <StrukturOrganisasi />
-      <VisiMisi />
+      <VisiMisi {...configs} />
       <Motto {...profile} {...configs} />
       <ApbDesa />
       <Umkm />
       <GaleriDesa />
-      <FooterTop />
+      <FooterTop {...configs} />
       <FooterBottom {...profile} {...configs} />
       <ScrollToTop />
     </div>

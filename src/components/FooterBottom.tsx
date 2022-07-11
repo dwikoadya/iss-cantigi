@@ -13,12 +13,13 @@ type IContact = {
   instagram: string
   youtube: string
   tiktok: string
+  site_name: string
 }
 
 type MixinType = IProfile & IContact
 
 export default function FooterBottom({
-  address, pic_phone, contact, email, facebook, instagram, youtube, tiktok,
+  address, pic_phone, contact, email, facebook, instagram, youtube, tiktok, site_name,
 }: MixinType) {
   return (
     <div className="bg-default flex justify-evenly flex-col lg:flex-row">
@@ -82,7 +83,7 @@ export default function FooterBottom({
             <i className="bx bxl-youtube" />
           </IconFrame>
         </div>
-        <p className="text-sm lg:text-base text-center lg:text-base/">eDesa - Desa Cantigi Kulon © {new Date().getFullYear()}. All Rights Reserved</p>
+        <p className="text-sm lg:text-base text-center lg:text-base/">{`eDesa - Desa ${site_name} © ${new Date().getFullYear()}. All Rights Reserved`}</p>
       </div>
     </div>
   );

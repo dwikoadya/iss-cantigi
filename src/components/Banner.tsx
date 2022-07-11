@@ -31,7 +31,7 @@ export default function Banner({ banners }:{banners: Banners[]}) {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <button
         className={clsx(
           "absolute left-5 top-[calc(50%+20px)] z-30 h-[45px] w-[45px]",
@@ -44,10 +44,10 @@ export default function Banner({ banners }:{banners: Banners[]}) {
       </button>
       <Slider ref={sliderRef} {...settings}>
         {banners.map((path, idx) => (
-          <div className="flex-center bg-light dark:bg-gray-800 w-full relative sm:h-[720px] h-[300px]" key={idx}>
+          <div className="flex-center dark:bg-gray-800  relative sm:h-[900px] h-[240px]" key={idx}>
             <Image
               alt="slider"
-              className="object-contain"
+              className="object-fill"
               layout="fill"
               priority={idx === 0}
               src={path.img_url}

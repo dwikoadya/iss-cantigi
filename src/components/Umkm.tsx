@@ -78,7 +78,7 @@ export default function Umkm() {
           onMovePrevRequest={() => setPhotoIndex((photoIndex + slide.length - 1) % slide.length)}
         />
       )}
-      <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">UMKM</h4>
+      <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">Potensi Desa</h4>
       <div className="w-full lg:max-w-screen-2xl relative sm:p-3">
         <button
           className={clsx(
