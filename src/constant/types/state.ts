@@ -33,3 +33,10 @@ export type Configs = {
   youtube: string
   tiktok: string
 }
+
+export type Cards = {
+  title: string
+  created_date: string
+  images: string
+  desc?: string
+}

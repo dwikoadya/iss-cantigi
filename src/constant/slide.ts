@@ -23,33 +23,28 @@ const slide = [{
 export const slideGaleri = [{
   image: "/images/galeriDesa1.jpeg",
   title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  desc: "PEMERINTAH DESA CANTIGI KULON MENGADAKAN KEGIATAN VAKSIN Cantigi Kulon, Minggu (17/04/22) Pemerintah Desa Cantigi Kulon melakukan kegiatan vaksin di balai desa Cantigi Kulon. Kegiatan vaksin merupakan salah satu upaya pencegahan mata rantai penyebaran covid 19. Sehingga pemerintah desa bersama Tim Satgas Covid yang ada di tingkat desa maupun kecamatan berkolaborasi untuk menangani penyebaran virus tersebut, yang dalam hal ini melalui vaksinasi.",
   time: new Date("2022-05-07"),
 }, {
   image: "/images/galeriDesa2.jpeg",
   title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  desc: "DESA CANTIGI KULON BERSAMA PKK KECAMATAN CANTIGI MEMPERINGATI HARI KARTINI. Pada hari Kamis tepatnya di tanggal (21/04/22) yang bertepatan dengan hari Kartini. Pemerintah Desa Cantigi Kulon bersama PKK Kecamatan Cantigi melakukan kegiatan seminar dengan tema \"Keluarga Sebagai Rumah Terbaik untuk Membangun Desa\".",
   time: new Date("2022-07-07"),
 }, {
   image: "/images/galeriDesa3.jpeg",
   title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  desc: "PKK DESA CANTIGI KULON MEMBAGIKAN TAKJIL Cantigi Kulon, Jumat (22/04/22) PKK Desa Cantigi Kulon membagikan takjil di pinggir jalan sekitaran RT 04/RW 02 Desa Cantigi Kulon. Kegiatan pembagian takjil ini dilaksanakan sebagai bentuk tindakan sosial bagi pengendara yang memang barangkali membutuhkan perbekalan untuk nanti buka puasa. Tidak hanya takjil, melainkan masker juga ikut dibagikan oleh ibu PKK kepada pengendara yang tidak memakai masker. Kemudian kegiatan ini dihadiri oleh Ibu Kuwu Chaerotunnisa yang ikut serta dalam membagikan takjil dan masker. Meskipun keadaan Ibu Kuwu masih dalam suasana berkabung, namun beliau terlihat semangat dalam membagikan takjil dan masker.",
   time: new Date("2022-06-07"),
 }, {
   image: "/images/galeriDesa4.jpeg",
   title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  desc: "Cantigi Kulon, 20 Juni 2022.  Diskusi antara Pemerintah Desa Cantigi Kulon dengan Tim E Desa dan Patriot Desa mengenai pembuatan Vidio profil Desa Cantigi Kulon  Sebagai langkah awal menuju desa digital dan desa juara.",
   time: new Date("2022-07-11"),
 }, {
   image: "/images/galeriDesa5.jpeg",
   title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  desc: "Pemerintah Desa Cantigi Kulon, Kecamatan Cantigi Kabupaten Indramayu bekerjasama dengan PT. INTI SMART SOLUTION melaksanakan peresmian layanan Digital Desa (Lebu Digital) kedalam sebuah aplikasi Bernama eDESA. Kamis (7/07/2022)",
   time: new Date("2022-04-01"),
-}, {
-  image: "/images/galeriDesa6.jpeg",
-  title: "Judul Berita",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  time: new Date("2022-03-05"),
 }];
 
 export default slide;

@@ -3,6 +3,7 @@ import Slider, { Settings } from "react-slick";
 import clsx from "clsx";
 
 import { slideGaleri } from "constant/slide";
+import { Cards } from "constant/types/state";
 import Card from "./Card";
 
 const settings: Settings = {
@@ -37,7 +38,7 @@ const settings: Settings = {
   ],
 };
 
-export default function GaleriDesa() {
+export default function GaleriDesa({ news }:{news: Cards[]}) {
   const sliderRef = useRef<Slider>(null);
 
   const next = () => {
@@ -51,13 +52,14 @@ export default function GaleriDesa() {
       sliderRef.current.slickPrev();
     }
   };
+
   return (
     <div className="flex flex-col w-full py-4 items-center justify-center lg:mt-16 mt-8 dark:text-white mb-10 lg:mb-20">
-      <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">Galeri Desa</h4>
+      <h4 className="lg:text-5xl text-2xl font-bold text-center mb-8">Berita Desa</h4>
       <div className="w-full lg:max-w-screen-2xl relative sm:p-3">
         <button
           className={clsx(
-            "absolute -left-20 top-[calc(15%+20px)]",
+            "absolute -left-20 top-[130px]",
             "hidden md:flex justify-center items-center",
           )}
           type="button"
@@ -67,16 +69,16 @@ export default function GaleriDesa() {
         </button>
         <div className="px-4">
           <Slider ref={sliderRef} {...settings}>
-            {slideGaleri.map((obj, idx) => (
+            {news.map((obj: Cards, idx: number) => (
               <Card
                 classCard="overflow-hidden flex flex-col gap-3 mt-3"
                 classDesc="lg:text-lg text-base"
                 classTitle="font-bold lg:text-3xl"
-                desc={obj.desc}
+                desc={slideGaleri[idx].desc}
                 height={900}
                 key={idx}
-                poto={obj.image}
-                time={obj.time}
+                poto={obj.images}
+                time={obj.created_date}
                 title={obj.title}
                 type="GALERI_DESA"
                 width={1500}
@@ -86,7 +88,7 @@ export default function GaleriDesa() {
         </div>
         <button
           className={clsx(
-            "absolute -right-20 top-[calc(15%+20px)]",
+            "absolute -right-20 top-[130px]",
             "hidden md:flex justify-center items-center",
           )}
           type="button"

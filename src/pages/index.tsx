@@ -6,10 +6,10 @@ import dynamic from "next/dynamic";
 
 import { login } from "api/auth";
 import {
-  dataGender, dataBanner, dataProfile, dataConfigs,
+  dataGender, dataBanner, dataProfile, dataConfigs, dataNews,
 } from "utils/landing-page-api";
 import {
-  Banners, Genders, Profile, Configs,
+  Banners, Genders, Profile, Configs, Cards,
 } from "constant/types/state";
 
 import Banner from "components/Banner";
@@ -52,6 +52,7 @@ const Home: NextPage = () => {
     youtube: "",
     tiktok: "",
   });
+  const [news, setNews] = useState<Cards[]>([]);
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
@@ -66,6 +67,7 @@ const Home: NextPage = () => {
             dataBanner({ setBanners });
             dataProfile({ setProfile });
             dataConfigs({ setConfigs });
+            dataNews({ setNews });
           }, 500);
         }
       };
@@ -75,9 +77,9 @@ const Home: NextPage = () => {
       dataBanner({ setBanners });
       dataProfile({ setProfile });
       dataConfigs({ setConfigs });
+      dataNews({ setNews });
     }
   }, []);
-
   return (
     <div className="w-full">
       <Head>
@@ -92,7 +94,7 @@ const Home: NextPage = () => {
       <Motto {...profile} {...configs} />
       <ApbDesa />
       <Umkm />
-      <GaleriDesa />
+      <GaleriDesa news={news} />
       <FooterTop {...configs} />
       <FooterBottom {...profile} {...configs} />
       <ScrollToTop />
