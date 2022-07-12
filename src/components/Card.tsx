@@ -37,7 +37,7 @@ export default function Card({
         <p className={classDesc}>{desc}</p>
         {
           type === "GALERI_DESA" && (
-            <span className="text-slate-600">
+            <span className="text-slate-600 dark:text-white">
               <TimeAgo
                 datetime={time}
                 locale="id"

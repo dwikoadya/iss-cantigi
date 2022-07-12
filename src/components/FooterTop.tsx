@@ -23,7 +23,7 @@ export default function FooterTop({ site_name }: ISiteName) {
         <h3 className="font-bold text-xl text-white mb-2.5 lg:text-4xl">Tertarik Untuk Menjelajah Lebih Jauh?</h3>
         <p className="font-medium text-lg text-white lg:text-3xl mb-2.5">{`Download Aplikasi eDESA ${site_name}!`}</p>
         <div className="text-sm text-white mb-4 lg:text-base">
-          <p>Desa Cantigi Kulon memiliki aplikasi digital desa yang dapat</p>
+          <p>{`Desa ${site_name} memiliki aplikasi digital desa yang dapat`}</p>
           <p>membantu memudahkan segala kebutuhan administrasi anda dan</p>
           <p>membantu mengembangkan UMKM Desa</p>
         </div>

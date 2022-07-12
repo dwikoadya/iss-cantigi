@@ -88,7 +88,7 @@ export default function Umkm() {
           type="button"
           onClick={prev}
         >
-          <i className="bx bx-chevron-left text-7xl text-black" />
+          <i className="bx bx-chevron-left text-7xl text-black dark:text-white" />
         </button>
         <div className="px-4">
           <Slider ref={sliderRef} {...settings}>
@@ -117,7 +117,7 @@ export default function Umkm() {
           type="button"
           onClick={next}
         >
-          <i className="bx bx-chevron-right text-7xl text-black" />
+          <i className="bx bx-chevron-right text-7xl text-black dark:text-white" />
         </button>
       </div>
     </div>
