@@ -21,13 +21,15 @@ export default function ApbDesa() {
           className={`rounded-lg ${belanja ? "bg-white" : "bg-buttonToggle"} ${belanja ? "text-light" : "text-white"} font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg`}
           type="button"
           onClick={() => setBelanja(!belanja)}
-        >Belanja
+        >
+          <a href="https://drive.google.com/file/d/10oD5l6VfdarbyT6xUHDiWTYgMwJl2Ksd/view?usp=sharing" rel="noreferrer" target="_blank">Belanja</a>
         </button>
         <button
           className={`rounded-lg ${pembiayaan ? "bg-white" : "bg-buttonToggle"} ${pembiayaan ? "text-light" : "text-white"} font-bold md:py-4 md:px-16 lg:px-24 py-2 px-8 text-lg`}
           type="button"
           onClick={() => setPembiayaan(!pembiayaan)}
-        >Pembiayaan
+        >
+          <a href="https://drive.google.com/file/d/10oD5l6VfdarbyT6xUHDiWTYgMwJl2Ksd/view?usp=sharing" rel="noreferrer" target="_blank">Pembiayaan</a>
         </button>
       </div>
     </div>
